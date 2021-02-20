@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{b9cc89a4-4c12-4aa3-9987-d6b68eaa0c83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ThirdParty">
+      <UniqueIdentifier>{b81b5bb3-993f-4105-9a6c-fb7db6e653fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ThirdParty\imgui">
+      <UniqueIdentifier>{496ca1a8-c939-4317-8c1e-b44e2967f806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\window">
+      <UniqueIdentifier>{e8d09186-fe4e-45ed-8249-edc8cd931743}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="imgui_module.cpp" />
+    <ClCompile Include="src\ThirdParty\imgui\backends\imgui_impl_glfw.cpp">
+      <Filter>src\ThirdParty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ThirdParty\imgui\backends\imgui_impl_opengl3.cpp">
+      <Filter>src\ThirdParty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ThirdParty\imgui\examples\libs\gl3w\GL\gl3w.c">
+      <Filter>src\ThirdParty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ThirdParty\imgui\imgui.cpp">
+      <Filter>src\ThirdParty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ThirdParty\imgui\imgui_demo.cpp">
+      <Filter>src\ThirdParty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ThirdParty\imgui\imgui_draw.cpp">
+      <Filter>src\ThirdParty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ThirdParty\imgui\imgui_widgets.cpp">
+      <Filter>src\ThirdParty\imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\window\window.hxx">
+      <Filter>src\window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ThirdParty\imgui\backends\imgui_impl_glfw.h">
+      <Filter>src\ThirdParty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ThirdParty\imgui\backends\imgui_impl_opengl3.h">
+      <Filter>src\ThirdParty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ThirdParty\imgui\examples\libs\gl3w\GL\gl3w.h">
+      <Filter>src\ThirdParty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ThirdParty\imgui\examples\libs\gl3w\GL\glcorearb.h">
+      <Filter>src\ThirdParty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ThirdParty\imgui\imgui.h">
+      <Filter>src\ThirdParty\imgui</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
