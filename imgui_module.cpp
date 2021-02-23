@@ -4,33 +4,24 @@
 #include "spdlog/spdlog.h"
 bool rs232_imgui_interface(ui::window_t*)
 {
-	static int open_flag;
-	static int close_flag;
 	static int receive_flag;
 	ImGui::Begin("RS-232 Communication");
 	ImGui::Text("Please input Port");
 	//ImGui::InputText("Port", port_buff, IM_ARRAYSIZE(port_buff));
 	ImGui::Text("Please input Bdrate");
 	//ImGui::InputText("Bdrate", bdrate_buff, IM_ARRAYSIZE(bdrate_buff));
+	ImGui::Text("Please input command");
+	//ImGui::InputText("Command", command_buff, IM_ARRAYSIZE(command_buff));
 	if (ImGui::Button("Open Port")) {
-		open_flag = 1;
+
 	}
 	ImGui::SameLine();
-	if (open_flag == 1) {
-		ImGui::Text("Open status is Yes");
-	}
-	else if (open_flag == 0) {
-		ImGui::Text("Open status is No");
-	}
 	if (ImGui::Button("Close Port")) {
-		close_flag = 1;
+
 	}
 	ImGui::SameLine();
-	if (close_flag == 1) {
-		ImGui::Text("Close status is Yes");
-	}
-	else if (close_flag == 0) {
-		ImGui::Text("Close status is No");
+	if (ImGui::Button("Send Command")) {
+
 	}
 	if (ImGui::Button("Receive Command")) {
 		receive_flag = 1;
@@ -39,7 +30,7 @@ bool rs232_imgui_interface(ui::window_t*)
 	if (receive_flag == 1) {
 		ImGui::Text("Receive status is Yes");
 	}
-	else if (receive_flag == 0) {
+	else {
 		ImGui::Text("Receive status is No");
 	}
 	ImGui::End();
@@ -68,7 +59,7 @@ int main()
 		/*	if (show_demo_window) {
 				ImGui::ShowDemoWindow(&show_demo_window);
 			}*/
-		draw(p);
+			//draw(p);
 		render(p);
 	}
 	clean_up(p);

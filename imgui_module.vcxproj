@@ -34,6 +34,7 @@
     <ClInclude Include="src\ThirdParty\imgui\examples\libs\gl3w\GL\gl3w.h" />
     <ClInclude Include="src\ThirdParty\imgui\examples\libs\gl3w\GL\glcorearb.h" />
     <ClInclude Include="src\ThirdParty\imgui\imgui.h" />
+    <ClInclude Include="src\ThirdParty\spdlog\spdlog.h" />
     <ClInclude Include="src\window\window.hxx" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
